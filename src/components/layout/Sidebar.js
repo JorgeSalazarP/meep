@@ -1,12 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseUser,faUser,faSearch, faCity } from '@fortawesome/free-solid-svg-icons';
+import TransportPublic from '../transportPublic/TransportPublic';
 
 const Sidebar = () => {
 
     return (
 
-        
+
       <section id="sidebar">
         <div className="title-container">
           <img src="/Logo-Meep.png" alt="Meep app" />
@@ -22,12 +23,14 @@ const Sidebar = () => {
             <span>User</span>
           </div>
 
-          <div className="options">
+          <div className="options" onClick={()=>console.log('HOLA')}>
             <FontAwesomeIcon icon={faSearch} className="icon" />
             <span>Search</span>
           </div>
 
-          <div className="container-search">
+          <TransportPublic/>
+
+          {/* <div className="container-search">
             <form action="#">
               <section className="input-box">
                 <span>Name</span>
@@ -45,7 +48,7 @@ const Sidebar = () => {
 
               <input type="submit" />
             </form>
-          </div>
+          </div> */}
         </div>
 
         <section className="options-container other-cities">

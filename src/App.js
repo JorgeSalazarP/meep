@@ -13,20 +13,20 @@ function App() {
     <React.Fragment>
 
       <Sidebar/>
-      <main id="dashboard-content">
+        <main id="dashboard-content">
 
-        <section id="container-header">
-          <h2 id="welcome-title">Welcome to Lisbon!</h2>
-         
-        </section>
+          <section id="container-header">
+            <h2 id="welcome-title">Welcome to Lisbon!</h2>
+          
+          </section>
 
-        <section id="grid-container">
-          <div className="grid-item map">Map</div>
-          <div className="grid-item table">Table</div>
-         
-        </section>
+          <section id="grid-container">
+            <div className="grid-item map">Map</div>
+            <div className="grid-item table">Table</div>
+          
+          </section>
 
-      </main>
+        </main>
 
     </React.Fragment>
       
