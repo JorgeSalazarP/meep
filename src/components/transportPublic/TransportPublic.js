@@ -1,5 +1,7 @@
 import React from 'react';
 import { getData } from '../../api/axios';
+import FiltersTransportData from './Filters/FiltersTransportData';
+
 
 
 const TransportPublic = () => {
@@ -13,10 +15,8 @@ const TransportPublic = () => {
       //history.replace('/404')}
       );
     },[]);
-    
-
+  console.log('HOLA')
     return (
-
         <React.Fragment>
          { transportPublicData.length > 0
             && 
