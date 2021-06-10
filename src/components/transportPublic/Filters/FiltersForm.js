@@ -5,7 +5,7 @@ import SelectRange from './SelectRange';
 
 
 const FiltersForm = ({ onClickSearch, ...props }) => {
-
+   
     const [batteryLevelChecked,setBatteryLevelChecked] = React.useState([]);
     const [filter, setFilter] = React.useState({
         name:'',
@@ -95,10 +95,6 @@ const FiltersForm = ({ onClickSearch, ...props }) => {
                                         {...props}
                                     />
 
-                                    
-
-
-                            
                                 <input
                                     type="submit"
                                     className="button-search"

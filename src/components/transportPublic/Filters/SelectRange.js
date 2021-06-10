@@ -1,21 +1,22 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import { rangeMinAndMax } from './rangeMinAndMax';
 
 
-export default function SelectRange({filteredRange}) {
+
+function SelectRange({ filteredRange }) {
   
  
-  
   function valuetext(value) {
     return `${value}`;
   }
  
-  const [value, setValue] = React.useState([20, 37]);
+  const [value, setValue] = React.useState([rangeMinAndMax.min, rangeMinAndMax.max]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    filteredRange(newValue);
+   
   };
 
   return (
@@ -29,3 +30,6 @@ export default function SelectRange({filteredRange}) {
     
   );
 }
+
+
+export default SelectRange;
