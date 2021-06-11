@@ -3,12 +3,12 @@ import { TreeView, TreeItem } from "@material-ui/lab";
 import { rangeBatteryLevel } from './rangeBatteryLevel';
 import FiltersForm from './FiltersForm';
 import { rangeMinAndMax } from './rangeMinAndMax';
+import { DataContext } from '../../../context/DataContext';
 
 
-const FiltersTransportData = ({ transportPublicData }) => {
+const FiltersTransportData = () => {
 
-    const [selectedTransportData,setSelectedTransportData] = React.useState(transportPublicData);
-
+    const { transportPublicData, setFilterData } = React.useContext(DataContext);
     const [chooseRange,setChooseRange] = React.useState([rangeMinAndMax.min,rangeMinAndMax.max]);
 
     const filteredRange = selectedRange =>{
@@ -17,8 +17,8 @@ const FiltersTransportData = ({ transportPublicData }) => {
 
    
     const onClickSearch = selectedFilter =>{
-           
-            setSelectedTransportData(
+        
+            setFilterData(
                 transportPublicData.filter(transport=>{
 
                     const filterByName = transport.name.toLowerCase().includes(selectedFilter.name.toLowerCase())
@@ -76,6 +76,10 @@ const FiltersTransportData = ({ transportPublicData }) => {
                 filteredRange={filteredRange}
                 
             />
+            
+            {/* <Map
+                selectedTransportData={selectedTransportData}
+            /> */}
         </>  
 
     );

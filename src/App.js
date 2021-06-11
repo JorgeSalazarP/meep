@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from './components/layout/Sidebar';
-
-
+import DataContextProvider from './context/DataContext';
+import TransportPublicData from './components/transportPublic/TransportPublicData';
 
 import './reset.css';
 import './App.css';
@@ -10,7 +10,10 @@ function App() {
   return (
 
 
-    <React.Fragment>
+
+
+    <DataContextProvider>
+      <TransportPublicData/>
 
       <Sidebar/>
         <main id="dashboard-content">
@@ -21,14 +24,20 @@ function App() {
           </section>
 
           <section id="grid-container">
-            <div className="grid-item map">Map</div>
+            <div className="grid-item map">
+
+                <div style={{height:'600px', width:'100%'}}>
+                    {/* <Map/> */}
+
+                </div>
+              
+            </div>
+
             <div className="grid-item table">Table</div>
           
           </section>
-
         </main>
-
-    </React.Fragment>
+    </DataContextProvider>
       
 
 

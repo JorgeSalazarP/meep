@@ -1,12 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseUser,faUser,faSearch, faCity } from '@fortawesome/free-solid-svg-icons';
-import TransportPublic from '../transportPublic/TransportPublic';
-import FiltersForm from '../transportPublic/Filters/FiltersForm';
+import FiltersTransportData from '../transportPublic/Filters/FiltersTransportData';
+
 
 
 const Sidebar = () => {
-
 
     return (
 
@@ -32,7 +31,7 @@ const Sidebar = () => {
 
           </div>
 
-          <TransportPublic/>
+            <FiltersTransportData/>
 
       
         </div>
