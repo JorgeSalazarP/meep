@@ -12,16 +12,13 @@ const Map = ({ mapData })=>{
   const [bounds,setBounds] = React.useState(null);
 
  
-
   const points = mapData.map(transport=>({
 
     properties:{
       cluster: false,
       transportId: transport.id,
-      name:transport.name,
-      licencePlate:transport.licencePlate, 
-      range:transport.range, 
-      batteryLevel:transport.batteryLevel
+      batteryLevel:transport.batteryLevel,
+   
       
     },
     geometry:{  
@@ -90,10 +87,9 @@ const Map = ({ mapData })=>{
                 >   
                    
                     <Popup
-                        name={cluster.properties.name}
-                        licencePlate={cluster.properties.licencePlate}
-                        range={cluster.properties.range} 
+                    
                         batteryLevel={cluster.properties.batteryLevel}
+                       
                     />
                     
                 </Marker>

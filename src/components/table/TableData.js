@@ -10,29 +10,21 @@ import './Table.css';
 
 const TableData = () => {
     const { transportPublicData } =  React.useContext(DataContext);
-    const containerStyle = e =>{
-
-
-    }
-   
+    
     return (
 
-
+    <div className="grid-item table">
         <div className="ag-theme-balham" style={{height: '100%', width: '100%'}}>
             <AgGridReact 
-                 
                 rowData={transportPublicData}
                 columnDefs={defaultTable.columnDefs}
                 defaultColDef={defaultTable.defaultColDef}
-                containerStyle={containerStyle}
                 pagination={true}
                 paginationPageSize={defaultTable.paginationSize}
-            
-               
             />
         </div>
             
-        
+    </div>
     );
 };
 
