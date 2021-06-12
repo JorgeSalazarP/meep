@@ -2,9 +2,11 @@ import React from 'react';
 import Sidebar from './components/layout/Sidebar';
 import DataContextProvider from './context/DataContext';
 import TransportPublicData from './components/transportPublic/TransportPublicData';
+import TableData from './components/table/TableData';
 
 import './reset.css';
 import './App.css';
+
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
             <section id="grid-container">
                 <TransportPublicData/>
 
-                <div className="grid-item table">Table</div>
+                <div className="grid-item table">
+                  <TableData/>
+                </div>
             </section>
         </main>
     </DataContextProvider>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseUser,faUser,faSearch, faCity } from '@fortawesome/free-solid-svg-icons';
-import FiltersTransportData from '../transportPublic/Filters/FiltersTransportData';
+import { faHouseUser,faUser,faSearch } from '@fortawesome/free-solid-svg-icons';
+import FiltersTransportData from '../transportPublic/filters/FiltersTransportData';
 
 
 
@@ -36,12 +36,7 @@ const Sidebar = () => {
       
         </div>
 
-        <section className="options-container other-cities">
-          <div className="options">
-            <FontAwesomeIcon icon={faCity} className="icon" />
-            <span>Other cities</span>
-          </div>
-        </section>
+       
       </section>
     );
 }

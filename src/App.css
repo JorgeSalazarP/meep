@@ -4,15 +4,18 @@ body{
   font-family: 'Poppins';
 }
 
+
+
 #sidebar {
   position: fixed;
   background-color: #f2f2f2;
-  width: 300px;
+  width: 270px;
   height: 100%;
   top: 0;
   left: 0;
   box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.1);
   transition: 200ms width;
+  
 }
 
 
@@ -85,6 +88,11 @@ img{
   height: 750px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
   padding: 0px;
+}
+
+.table{
+
+  height: 380px;
 }
 
 
@@ -199,14 +207,6 @@ input[type=submit]:hover{
 }
 
 
-
-
-@media (max-width: 1400px) {
-  #grid-container {
-    grid-template-columns: 100%;
-  }
-}
-
 @media (max-width: 950px) {
   .title-container h1 {
     display: none;
@@ -223,4 +223,14 @@ input[type=submit]:hover{
   .title-container {
     padding: 20px;
   }
+}
+
+
+
+@media (max-width: 1400px) {
+  #grid-container {
+    grid-template-columns: 100%;
+  }
+
+  
 }

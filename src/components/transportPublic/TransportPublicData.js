@@ -15,9 +15,9 @@ const TransportPublicData = () => {
     if ( filterData.length > 0 ){
 
         mapData = [...filterData];
-        console.log('hola0')
+       
     } else{
-        console.log('hola')
+       
         mapData = [...transportPublicData];
     }
     
