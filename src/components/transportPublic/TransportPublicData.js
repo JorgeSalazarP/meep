@@ -1,7 +1,6 @@
 import React from 'react';
 import { getData } from '../../api/axios';
 import { DataContext } from '../../context/DataContext';
-import FiltersTransportData from './Filters/FiltersTransportData';
 import Map from '../map/Map';
 
 
@@ -10,26 +9,35 @@ const TransportPublicData = () => {
     const { transportPublicData, filterData } = React.useContext(DataContext);
     let mapData = [];
 
+    console.log(filterData);
+
+    
     if ( filterData.length > 0 ){
 
         mapData = [...filterData];
+        console.log('hola0')
     } else{
-        
+        console.log('hola')
         mapData = [...transportPublicData];
     }
     
     
     return  (
-        <React.Fragment>
+        <div className="grid-item map">
+            <div style={{height:'100%', width:'100%'}}>
             {   transportPublicData.length > 0
                 &&
-                <Map 
+                <Map
+                    
                     mapData={mapData}
                 />
     
             }
+            </div>
+        </div>
+           
 
-        </React.Fragment>
+            
     );
    
    

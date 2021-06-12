@@ -84,11 +84,8 @@ img{
 .grid-item {
   height: 750px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-  padding: 50px;
+  padding: 0px;
 }
-
-
 
 
 
@@ -179,6 +176,26 @@ input[type=submit]{
 }
 input[type=submit]:hover{
   cursor: pointer;
+}
+
+
+.cluster-marker {
+  color: #fff;
+  background: #ff8253;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transport-marker {
+  background: none;
+  border: none;
+}
+
+.transport img {
+  width: 25px;
 }
 
 

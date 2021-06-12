@@ -17,9 +17,8 @@ const FiltersTransportData = () => {
 
    
     const onClickSearch = selectedFilter =>{
-        
-            setFilterData(
-                transportPublicData.filter(transport=>{
+
+            const findFilter = transportPublicData.filter(transport=>{
 
                     const filterByName = transport.name.toLowerCase().includes(selectedFilter.name.toLowerCase())
                 
@@ -64,24 +63,20 @@ const FiltersTransportData = () => {
                     
 
                 })
-            )            
+
+            setFilterData(findFilter);
     }
 
     
 
     return (    
-        <>
-            <FiltersForm
-                onClickSearch={onClickSearch}
-                filteredRange={filteredRange}
+      
+        <FiltersForm
+            onClickSearch={onClickSearch}
+            filteredRange={filteredRange}
                 
-            />
+        />
             
-            {/* <Map
-                selectedTransportData={selectedTransportData}
-            /> */}
-        </>  
-
     );
 }
  
