@@ -1,18 +1,13 @@
 # Meep App. React
 
-Creación una pequeña aplicación web, que muestre la siguiente
+Creación de una pequeña aplicación web, que muestra la siguiente
 información:
--Un mapa con los recursos posicionados, sería interesante ver como
-usas las agrupaciones en el zoom en el mapa
--Un panel lateral de navegación estilo árbol, para poder filtrar por
-tipología de recursos.
--Indicación de algún tipo del nivel de batería, por ejemplo, color verde del
-recurso si la batería está por encima del 25%, nos gustaría ver algún tipo
-de modal cuando pasamos por encima del recurso viendo esta
-información.
--Y otro panel navegable, donde se muestre una tabla filtrable y ordenable
-por cada campo, con una paginación de 10 elementos. Los campos a
-mostrar serán los siguiente: matrícula, coordenadas y modelo del
+-Un mapa con los recursos posicionados, agrupados en el zoom en el mapa.
+-Un panel lateral de navegación estilo árbol, para poder filtrar por tipología de recursos.
+-Indicación de algún tipo del nivel de batería, color verde del
+recurso si la batería está por encima del 50%, naranja entre 25% y 50% y rojo si es menor al 25%
+de modal cuando pasamos por encima del recurso viendo esta información.
+-Y otro panel navegable, donde se muestra una tabla filtrable y ordenable por cada campo, con una paginación de 10 elementos. Los campos a mostrar serán los siguiente: matrícula, coordenadas y modelo del
 vehículo.
 
 Se han utilizado las siguientes herramientas de desarrollo web:
