@@ -36,16 +36,6 @@
   
   
   
-
-@media (max-width: 950px) {
- 
-    #dashboard-content {
-      margin-left: 75px;
-    }
-   
-}
-  
-  
   
 @media (max-width: 1400px) {
     #grid-container {

@@ -1,23 +1,35 @@
 import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import DataContextProvider from './context/DataContext';
-import Layout from './components/layout/Layout';
-import Sidebar from './components/layout/Sidebar';
-
 
 import './reset.css';
 import './App.css';
+import MeepApp from './components/layout/MeepApp';
 
 
 function App() {
   return (
-    <DataContextProvider>
-      <Sidebar/>
-      <Layout/>
-    </DataContextProvider>
-      
+      <DataContextProvider>
+        <Switch>
+          <Route exact path="/"component={MeepApp}/>
+          <Route path="/404">
+            <div
+              style={{
+                textAlign: 'center',
+                fontSize: 48,
+                fontWeight: 'bold',
+              }}
+            >
+              404 | Not found page
+            </div>
+          </Route>
+          <Route>
+            <Redirect to="/404" />
+          </Route>
 
-
-
+        </Switch>
+      </DataContextProvider>
+    
   );
 }
 

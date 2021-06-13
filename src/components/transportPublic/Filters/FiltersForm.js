@@ -43,14 +43,14 @@ const FiltersForm = ({ onClickSearch, ...props }) => {
     }
 
     return (  
-    <div>
+    <div className="container-form">
 
-        <TreeView style={{ marginTop:'10'}}>
-            <TreeItem nodeId="1" label="Filter" >
+        <TreeView style={{ marginTop:'15px'}}>
+            <TreeItem nodeId="1" label="Filter">
                 <TreeItem nodeId="2" label="Options">
                     
                     <TreeItem nodeId="3" 
-                        style={{ paddingTop:'10px'}}         
+                        style={{ paddingTop:'5px'}}         
                     />
                        
                             <form

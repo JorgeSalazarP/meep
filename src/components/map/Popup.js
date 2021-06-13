@@ -7,9 +7,8 @@ import ProgressBarBattery from './ProgressBarBattery';
 const Popup = ({ batteryLevel }) => {
 
     const [isProgressBar, setIsProgressBar] = React.useState(false);
-    const openProgressBarBattery = () => (setIsProgressBar(!isProgressBar));
 
-    
+    const openProgressBarBattery = () => (setIsProgressBar(!isProgressBar));
     return ( 
         <React.Fragment>
             <div 

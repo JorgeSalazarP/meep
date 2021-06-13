@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseUser,faUser,faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faHouseUser,faUser } from '@fortawesome/free-solid-svg-icons';
 import FiltersTransportData from '../transportPublic/filters/FiltersTransportData';
 
 import './Sidebar.css';
@@ -26,15 +26,8 @@ const Sidebar = () => {
             <span>User</span>
           </div>
 
-          <div className="options">
-            <FontAwesomeIcon icon={faSearch} className="icon" />
-            <span>Search</span>
-
-          </div>
-
             <FiltersTransportData/>
 
-      
         </div>
 
        
