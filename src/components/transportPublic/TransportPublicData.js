@@ -9,9 +9,6 @@ const TransportPublicData = () => {
     const { transportPublicData, filterData } = React.useContext(DataContext);
     let mapData = [];
 
-    console.log(filterData);
-
-    
     if ( filterData.length > 0 ){
 
         mapData = [...filterData];

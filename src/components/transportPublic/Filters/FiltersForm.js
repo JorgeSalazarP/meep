@@ -1,4 +1,5 @@
 import React from 'react';
+import T from 'prop-types';
 import { TreeView, TreeItem } from "@material-ui/lab";
 import { rangeBatteryLevel } from './rangeBatteryLevel';
 import SelectRange from './SelectRange';
@@ -116,5 +117,11 @@ const FiltersForm = ({ onClickSearch, ...props }) => {
      
     );
 }
- 
+
+FiltersForm.propTypes = {
+    onClickSearch: T.func.isRequired,
+    
+};
+  
+
 export default FiltersForm;

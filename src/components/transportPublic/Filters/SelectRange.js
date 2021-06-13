@@ -1,4 +1,5 @@
 import React from 'react';
+import T from 'prop-types';
 import Slider from '@material-ui/core/Slider';
 import { rangeMinAndMax } from './rangeMinAndMax';
 
@@ -31,5 +32,8 @@ function SelectRange({ filteredRange }) {
   );
 }
 
-
+SelectRange.propTypes = {
+  filteredRange: T.func.isRequired,
+  
+};
 export default SelectRange;

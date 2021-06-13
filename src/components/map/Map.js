@@ -1,4 +1,5 @@
 import React from 'react';
+import T from 'prop-types';
 import GoogleMapReact from 'google-map-react';
 import useSupercluster from "use-supercluster";
 import credentials from './credentials';
@@ -101,5 +102,14 @@ const Map = ({ mapData })=>{
 
   );
 }
+
+Popup.propTypes = {
+    batteryLevel:T.array
+    
+};
+
+Popup.defaultProps = {
+    batteryLevel: [],
+};
 
 export default Map;

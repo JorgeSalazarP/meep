@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popup snapshot testing 1`] = `
+<Fragment>
+  <div
+    className="transport-marker"
+    onMouseEnter={[Function]}
+  >
+    <img
+      alt="moto"
+      src="/moto.png"
+    />
+    <div
+      className="progress-bar blue shine"
+    >
+      <styled.span
+        batteryLevel={0}
+      />
+    </div>
+  </div>
+</Fragment>
+`;

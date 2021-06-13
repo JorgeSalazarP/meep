@@ -1,4 +1,5 @@
 import React from 'react';
+import T from 'prop-types';
 import ProgressBarBattery from './ProgressBarBattery';
 import './Popup.css';
 
@@ -32,5 +33,14 @@ const Popup = ({ batteryLevel }) => {
         </React.Fragment>
     );
 }
+
+Popup.propTypes = {
+    batteryLevel:T.number
+    
+};
+
+Popup.defaultProps = {
+    batteryLevel: 0,
+};
  
 export default Popup;

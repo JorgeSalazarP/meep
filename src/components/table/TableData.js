@@ -10,7 +10,6 @@ import './Table.css';
 
 const TableData = () => {
     const { transportPublicData } =  React.useContext(DataContext);
-    
     return (
 
     <div className="grid-item table">
