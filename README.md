@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Meep App. React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Creación una pequeña aplicación web, que muestre la siguiente
+información:
+● Un mapa con los recursos posicionados, sería interesante ver como
+usas las agrupaciones en el zoom en el mapa
+● Un panel lateral de navegación estilo árbol, para poder filtrar por
+tipología de recursos
+● Indicación de algún tipo del nivel de batería, por ejemplo, color verde del
+recurso si la batería está por encima del 25%, nos gustaría ver algún tipo
+de modal cuando pasamos por encima del recurso viendo esta
+información.
+● Y otro panel navegable, donde se muestre una tabla filtrable y ordenable
+por cada campo, con una paginación de 10 elementos. Los campos a
+mostrar serán los siguiente: matrícula, coordenadas y modelo del
+vehículo.
 
-## Available Scripts
+Se han utilizado las siguientes herramientas de desarrollo web:
+- HTML
+- CSS3  
+- JAVASCRIPT
+- REACT
 
-In the project directory, you can run:
 
-### `yarn start`
+## Crear una aplicación de Create React Apps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npx create-react-app meep
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalación google-map-react 
 
-### `yarn test`
+Librería de React para poder visualizar el mapa de google maps en la aplicación
+Además necesitamos una GOOGLE KEY. Archivo .env.example
+```
+npm i google-map-react
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Instalación de use-supercluster
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para poder agrupar por puntos cercanos cuando realizamos zoom sobre el mapa.
+```
+npm i use-supercluster
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación de axios para llamar realizar método get en el endpoint facilitado
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm i axios
+```
 
-### `yarn eject`
+## Instalamos esta librería para ordenar, filtrar y realizar paginación de la BBDD
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm i ag-grid-react
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instalación de react-router-dom
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm i react-router-dom
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Instalación de enzyme para el testing
 
-## Learn More
+```
+npm i --save-dev enzyme
+npm I --save-dev enzyme-adapter-react-16
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Formas de arrancar 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* En desarrollo
 
-### Code Splitting
+```
+npm build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* En producción
+```
+npm start
+```
 
-### Analyzing the Bundle Size
+* Para TDD
+```
+npm run test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Rutas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* '/': Página principal de la aplicación.
 
-### Advanced Configuration
+* '/meep': Redirecciona a la página principal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* '/404': Página de error 404.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Desarrollado por:
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jorge Salazar.
