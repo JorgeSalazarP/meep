@@ -35,7 +35,7 @@ export const defaultTable = {
     defaultColDef : {
         sortable:true,
         filter:true,
-        width:'110px',
+        width:110,
        
        
     },

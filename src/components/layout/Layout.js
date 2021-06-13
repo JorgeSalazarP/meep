@@ -2,6 +2,8 @@ import React from 'react';
 import TableData from '../table/TableData';
 import TransportPublicData from '../transportPublic/TransportPublicData';
 
+import './Layout.css';
+
 const Layout = () => {
     return (
         <main id="dashboard-content">

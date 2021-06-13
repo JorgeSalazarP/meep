@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseUser,faUser,faSearch } from '@fortawesome/free-solid-svg-icons';
 import FiltersTransportData from '../transportPublic/filters/FiltersTransportData';
 
+import './Sidebar.css';
 
 
 const Sidebar = () => {

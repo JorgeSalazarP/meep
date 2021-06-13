@@ -1,7 +1,8 @@
+
 .grid-cell-centered{
    display: flex;
    justify-content: flex-start;
-   color: #ff8253;
+   color: var(--color-principal);
 
 }
 

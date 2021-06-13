@@ -1,9 +1,9 @@
 import React from 'react';
 import T from 'prop-types';
 import { TreeView, TreeItem } from "@material-ui/lab";
-import { rangeBatteryLevel } from './rangeBatteryLevel';
 import SelectRange from './SelectRange';
 
+import './Filters.css';
 
 const FiltersForm = ({ onClickSearch, ...props }) => {
    

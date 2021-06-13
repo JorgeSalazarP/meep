@@ -1,7 +1,7 @@
 import React from 'react';
 import T from 'prop-types';
 import ProgressBarBattery from './ProgressBarBattery';
-import './Popup.css';
+
 
 
 const Popup = ({ batteryLevel }) => {
@@ -18,7 +18,7 @@ const Popup = ({ batteryLevel }) => {
                 <img src="/moto.png" alt="moto"  />
 
                     
-                <div className="progress-bar blue shine">
+                <div className="progress-bar shine">
 
                     <ProgressBarBattery
                         batteryLevel={batteryLevel}

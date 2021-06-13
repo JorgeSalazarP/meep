@@ -1,5 +1,4 @@
 import React from 'react';
-import { TreeView, TreeItem } from "@material-ui/lab";
 import { rangeBatteryLevel } from './rangeBatteryLevel';
 import FiltersForm from './FiltersForm';
 import { rangeMinAndMax } from './rangeMinAndMax';

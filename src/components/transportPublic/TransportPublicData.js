@@ -1,5 +1,4 @@
 import React from 'react';
-import { getData } from '../../api/axios';
 import { DataContext } from '../../context/DataContext';
 import Map from '../map/Map';
 

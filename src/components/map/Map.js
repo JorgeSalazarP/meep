@@ -6,6 +6,8 @@ import credentials from './credentials';
 import Marker from './Marker';
 import Popup from './Popup';
 
+import './Map.css';
+
 const Map = ({ mapData })=>{
 
   
