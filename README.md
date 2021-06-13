@@ -2,15 +2,15 @@
 
 Creación una pequeña aplicación web, que muestre la siguiente
 información:
-● Un mapa con los recursos posicionados, sería interesante ver como
+-Un mapa con los recursos posicionados, sería interesante ver como
 usas las agrupaciones en el zoom en el mapa
-● Un panel lateral de navegación estilo árbol, para poder filtrar por
-tipología de recursos
-● Indicación de algún tipo del nivel de batería, por ejemplo, color verde del
+-Un panel lateral de navegación estilo árbol, para poder filtrar por
+tipología de recursos.
+-Indicación de algún tipo del nivel de batería, por ejemplo, color verde del
 recurso si la batería está por encima del 25%, nos gustaría ver algún tipo
 de modal cuando pasamos por encima del recurso viendo esta
 información.
-● Y otro panel navegable, donde se muestre una tabla filtrable y ordenable
+-Y otro panel navegable, donde se muestre una tabla filtrable y ordenable
 por cada campo, con una paginación de 10 elementos. Los campos a
 mostrar serán los siguiente: matrícula, coordenadas y modelo del
 vehículo.
@@ -44,7 +44,7 @@ Para poder agrupar por puntos cercanos cuando realizamos zoom sobre el mapa.
 npm i use-supercluster
 ```
 
-## Instalación de axios para llamar realizar método get en el endpoint facilitado
+## Instalación de axios para realizar el método get en el endpoint facilitado
 
 ```
 npm i axios
