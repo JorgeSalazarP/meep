@@ -1,6 +1,6 @@
 
 .cluster-marker {
-  color: #fff;
+  color:var(--color-secundary);
   background: var(--color-principal);
   border-radius: 50%;
   padding: 10px;
