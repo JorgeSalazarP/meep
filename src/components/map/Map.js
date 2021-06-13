@@ -106,12 +106,12 @@ const Map = ({ mapData })=>{
 }
 
 Popup.propTypes = {
-    batteryLevel:T.array
+    mapData:T.array
     
 };
 
 Popup.defaultProps = {
-    batteryLevel: [],
+    mapData: [],
 };
 
 export default Map;

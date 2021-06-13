@@ -7,26 +7,31 @@ import ProgressBarBattery from './ProgressBarBattery';
 const Popup = ({ batteryLevel }) => {
 
     const [isProgressBar, setIsProgressBar] = React.useState(false);
+    const openProgressBarBattery = () => (setIsProgressBar(!isProgressBar));
+
     
     return ( 
         <React.Fragment>
             <div 
                 className="transport-marker"
-                onMouseEnter={()=>console.log('hola')}
+                onMouseEnter={openProgressBarBattery}
+                onMouseOut={openProgressBarBattery}
                      
             >
-                <img src="/moto.png" alt="moto"  />
+                <img src="/moto.png" alt="moto"/>
 
-                    
-                <div className="progress-bar shine">
+                { isProgressBar
+                    &&
+                        <div className="progress-bar shine">
 
-                    <ProgressBarBattery
-                        batteryLevel={batteryLevel}
-                    >
-                    </ProgressBarBattery>
+                            <ProgressBarBattery
+                                batteryLevel={batteryLevel}
+                            >
+                            </ProgressBarBattery>
+                            
+                        </div>
 
-                    
-                </div>
+                }    
               
             </div> 
             
