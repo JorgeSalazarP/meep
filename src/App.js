@@ -12,6 +12,9 @@ function App() {
       <DataContextProvider>
         <Switch>
           <Route exact path="/"component={MeepApp}/>
+          <Route exact path='/meep'> 
+              <Redirect to='/'/>
+          </Route>
           <Route path="/404">
             <div
               style={{
